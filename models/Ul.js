@@ -26,6 +26,11 @@ export class Ul {
        
     }
 
+    showProgress(currentIndex, total) {
+        const element = document.getElementById('progress')
+        element.innerHTML = `Questio ${currentIndex} of ${total}`
+    }
+
 
 
 }
