@@ -1,9 +1,14 @@
 import { questionsArray } from "./questions.js"
 import { Quiz } from "./models/Quiz.js"
+import { UI } from "./models/Ul.js"
+
 
 const main = () => {
     const quiz = new Quiz(questionsArray)
-    console.log(quiz)
+    const ui = new UI()
+
+    ui.showQuestion('Question injected!')
+   
 }
 
 main()
