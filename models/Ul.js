@@ -16,6 +16,16 @@ export class Ul {
         }
     }
 
+    showScore(score) {
+        const quizEndHTML = `
+        <h1>result</h1>
+        <h2>your final score is: ${score}</h2>
+        `
+        const element = document.getElementById("quiz")
+        element.innerHTML = quizEndHTML
+       
+    }
+
 
 
 }
