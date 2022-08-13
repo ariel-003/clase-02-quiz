@@ -8,7 +8,9 @@ const main = () => {
     const ui = new UI()
 
     ui.showQuestion(quiz.getCurrentQuestion().text)
-    ui.showChoices(quiz.getCurrentQuestion().choices)
+    ui.showChoices(quiz.getCurrentQuestion().choices, (currentChoice) => {
+        quiz.valodateAndContinue(currentChoice)
+    })
    
 }
 
